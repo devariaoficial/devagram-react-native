@@ -1,0 +1,53 @@
+{
+  "colors": {
+    "primaryColor": "#5E49FF",
+    "greenColor": "#3BD42D",
+    "greenWaterColor": "#25CBD3",
+    "lightBlueColor": "#F0F5FF",
+    "whiteColor": "#FFFFFF",
+    "grayColor00": "#F4F4F4",
+    "grayColor01": "#DADADA",
+    "grayColor02": "#7C7786",
+    "grayColor03": "#4D4C4D",
+    "grayColor04": "#333333",
+    "grayColor05": "#E5E5E5"
+  },
+  "expo": {
+    "name": "devagram",
+    "slug": "devagram",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O aplicativo Devagram, deseja ter acesso a galeria do seu dispositivo"
+        }
+      ]
+    ]
+  }
+}
