@@ -33,8 +33,15 @@ const getCurrentUser = async () => {
 }
 
 const search = async (filter: string) =>  {
-    console.log('filter', filter)
-    return await DevagramApiService.get(`pesquisa?filtro=${filter}`)
+    return await DevagramApiService.get(`/pesquisa?filtro=${filter}`)
 }
 
-export {login, getCurrentUser, register, search}
+const getProfile = async (id: string) =>  {
+    return await DevagramApiService.get(`/pesquisa?id=${id}`)
+}
+
+const toggleFollow = async (id: string) => {
+    return await DevagramApiService.put(`/seguir?id=${id}`)
+}
+
+export {login, getCurrentUser, register, search, getProfile, toggleFollow}

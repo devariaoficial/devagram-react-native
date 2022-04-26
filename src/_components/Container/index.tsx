@@ -11,7 +11,9 @@ const Container = (props: IContainer) => {
     const [filter, setFilter] = useState<string>('')
     return (
         <SafeAreaView style={styles.container}>
-            <Header 
+            <Header
+                editProfileHeader={props.headerProps.editProfileHeader}
+                profileHeader={props.headerProps.profileHeader}
                 default={props.headerProps.default}
                 searchBar={{
                     value: filter,

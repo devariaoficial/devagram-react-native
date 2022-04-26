@@ -1,4 +1,5 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
+import EditProfile from '../_screens/EditProfile';
 import Home from '../_screens/Home';
 import Login from '../_screens/Login';
 import ExternalProfile from '../_screens/Profile';
@@ -15,6 +16,7 @@ const Routes = () => {
           <Stack.Screen name="Register" component={Register} />
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Profile" component={ExternalProfile} />
+          <Stack.Screen name="EditProfile" component={EditProfile} />
         </Stack.Navigator>
       );
 }

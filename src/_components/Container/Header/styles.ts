@@ -41,6 +41,27 @@ const styles = StyleSheet.create({
         color: colors.primaryColor
 
     },
+    containerProfile: {
+        flex: 1,
+        alignItems: "center", 
+        justifyContent: "space-between",
+        flexDirection: "row"
+    },
+    textName: {
+        fontFamily: 'biennale-bold',
+    },
+    textCancel: {
+        color: colors.grayColor03,
+        fontFamily: 'biennale',
+        fontSize: 12,
+        fontWeight: '500'
+    },
+    textSubmit: {
+        color: colors.primaryColor,
+        fontFamily: 'biennale',
+        fontSize: 12,
+        fontWeight: '700'
+    }
 });
 
 export default styles

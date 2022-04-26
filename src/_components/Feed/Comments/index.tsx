@@ -9,10 +9,6 @@ const Comments = (props: ICommentsComponent) => {
     const [comment, setComment] = useState<string>('')
     const [comments, setComments] = useState<IComment[]>(props.comments)
 
-    useEffect(() => {
-        console.log(comments)
-    },[comments])
-
     const onComment = async () => {
         try {
             if(props.userLogged && props.userLogged.name && props.userLogged.id){
